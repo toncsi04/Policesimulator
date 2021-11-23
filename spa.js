@@ -72,8 +72,8 @@ function adventurePage(){
     clearContainer();
     container.innerHTML +=`
     <button onclick="easyAdventure()">School (easy)</button>
-    <button>Supermarket (medium)</button>
-    <button>Hood (impossible)</button>
+    <button onclick="mediumAdventure()">Supermarket (medium)</button>
+    <button onclick="hardAdventure()">Hood (impossible)</button>
     `
 }
 
@@ -82,6 +82,12 @@ function easyAdventure(){
     container.innerHTML = `<h2>Harmless nigger appeared</h2>
     `
     fight(trapper)
+}
+
+function mediumAdventure(){
+    container.innerHTML = `<h2>Thief nigger appeared</h2>
+    `
+    fight(trapper2)
 }
 
 function fight(enemy){
