@@ -40,3 +40,17 @@ let trapper2 = {
     },
     "defense" : 15,
 }
+
+let trapper3 = {
+    "level" : 100,
+    "name" : "Gangster nigger",
+    "max_hp" : 1000,
+    "hp" : 1000,
+    "strength" : 60,
+    "agility" : 20,
+    "damage" : {
+        "min":20,
+        "max":30,
+    },
+    "defense" : 50,
+}

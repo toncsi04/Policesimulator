@@ -67,6 +67,15 @@ function addPoint(ctx){
 
 characterPage();
 
+function patchPage(){
+    clearContainer();
+    container.innerHTML +=`
+    <h1>Newest Patch: Added patch notes and the Hood</h1>
+    `
+}
+patchPage();
+
+
 
 function adventurePage(){
     clearContainer();
@@ -90,6 +99,12 @@ function mediumAdventure(){
     fight(trapper2)
 }
 
+function hardAdventure(){
+    container.innerHTML = `<h2>Gangster nigger appeared</h2>
+    `
+    fight(trapper3)
+}
+
 function fight(enemy){
     let playerRound = false;
     
@@ -108,7 +123,7 @@ else{
 playerRound =!playerRound
     }
     if(stats.hp <= 0){
-        container.innerHTML += `<strong>YOU GET GANG-BANGED BY ${enemy.name}!!!44!!4!4!!!!4!!!!</strong>`
+        container.innerHTML += `<strong>YOU GET KILLED BY ${enemy.name}!!!</strong>`
     }
     else{
         container.innerHTML += `<strong>CONGRATULATIONS! YOU KILLED ${enemy.name}</strong>`
