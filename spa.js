@@ -1,5 +1,5 @@
 let container = document.getElementById("container");
-
+let kep=1
 function clearContainer(){
     container.innerHTML = "";
 }
@@ -7,7 +7,8 @@ function clearContainer(){
 function characterPage(){
     clearContainer();
     container.innerHTML += `
-    <h1>${stats.hero_name}</h1>
+    <h1 class="hero">${stats.hero_name}</h1>
+    <img class="kep" src="${kep}.jpg" alt="">
     <div class="outerHP">
         <div class="innerHP" id="HP"></div>
         <span id="HPnum">${stats.hp}/${stats.max_hp}</span>
