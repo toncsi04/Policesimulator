@@ -49,6 +49,11 @@ function characterPage(){
         </tr>
     </table>
     `
+    if (stats.hp > stats.max_hp) {
+        stats.hp = stats.max_hp;
+      }
+    
+    
     let addbuttons = document.getElementsByClassName('addPoint')
     if(stats.skill_points > 0){
         for(let i=0; i < addbuttons.length; i++){
@@ -114,6 +119,10 @@ function fight(enemy){
 if (playerRound){
     damage = Math.floor(Math.random()*stats.damage.max) + stats.damage.min 
     enemy.hp -= damage
+    if (stats.hp > stats.max_hp) {
+        stats.hp = stats.max_hp;
+      }
+    
     container.innerHTML += `<p>You attacked ${enemy.name}!  You dealt ${damage} damage</p>`
 }
 else{
