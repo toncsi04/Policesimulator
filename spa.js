@@ -76,7 +76,7 @@ characterPage();
 function patchPage(){
     clearContainer();
     container.innerHTML +=`
-    <h1>Newest Patch: Added patch notes and the Hood</h1>
+    <h1>Newest Patch: Almost patched out the hp glitch</h1>
     `
 }
 patchPage();

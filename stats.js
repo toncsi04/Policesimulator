@@ -2,8 +2,8 @@ let stats = {
     "level" : 1,
     "skill_points" : 5,
     "hero_name" : "Police officer",
-    "max_hp" : 200,
-    "hp" : 200,
+    "max_hp" : 4600,
+    "hp" : 4600,
     "strength" : 5,
     "agility" : 8,
     "damage" : {
